@@ -1,6 +1,6 @@
-import { GameState } from "../models/GameState"
-import { initializeBoard } from "./initializeBoard"
-import { initializeDevDeck } from "./initializeDevDeck"
+import { GameState } from "../../../models/GameState"
+import { initializeBoard } from "../../init/initializeBoard"
+import { initializeDevDeck } from "../../init/initializeDevDeck"
 
 export function createGame(gameId: string): GameState {
   return {

@@ -1,5 +1,5 @@
-import { Tile, Vertex, Edge } from "../models/Board"
-import { ResourceType } from "../models/Resources"
+import { Tile, Vertex, Edge } from "../../models/Board"
+import { ResourceType } from "../../models/Resources"
 
 type Axial = { q: number; r: number }
 

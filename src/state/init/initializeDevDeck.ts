@@ -1,5 +1,5 @@
-import { DevelopmentCardType } from "../models/DevelopmentCard"
-import { shuffle } from "../utils/shuffle"
+import { DevelopmentCardType } from "../../models/DevelopmentCard"
+import { shuffle } from "../../utils/shuffle"
 
 export function initializeDevDeck(): DevelopmentCardType[] {
   const deck: DevelopmentCardType[] = [
