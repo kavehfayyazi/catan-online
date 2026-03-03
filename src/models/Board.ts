@@ -15,7 +15,6 @@ export interface Tile {
 export interface Vertex {
   vertexId: string
   adjacentTileIds: string[]
-  adjacentVertexIds: string[]
 
   building:
     | null
@@ -31,7 +30,6 @@ export interface Edge {
   edgeId: string
   vertexA: string
   vertexB: string
-  adjacentEdgeIds: string[]
 
   road:
     | null
