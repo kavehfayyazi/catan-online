@@ -3,10 +3,10 @@ import { dispatchAction } from "../state/engine/dispatchAction"
 export const handler = async (event: any) => {
   const body = JSON.parse(event.body)
 
-  const { action, game, payload } = body
+  const { game, action } = body
 
   try {
-    const updatedGame = dispatchAction(game, action, payload)
+    const updatedGame = dispatchAction(game, action)
 
     return {
       statusCode: 200,
