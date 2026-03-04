@@ -4,16 +4,26 @@ import { Board } from "./Board"
 
 export type Phase = "SETUP" | "ROLL" | "ROBBER" | "BUILD" | "TRADE"
 
+export interface Turn {
+  playerId: string
+  hasRolled: boolean
+  diceValue: number | null
+  devCardPlayed: boolean
+}
+
 export interface GameState {
   gameId: string
   players: Player[]
   board: Board
-  currentTurnPlayerId: string
+  
   phase: Phase
-  diceValue: number | null
+  turn: Turn
+
   developmentDeck: DevelopmentCardType[]
+
   playersToDiscard?: string[]
   robberMovePending?: boolean
-  largestArmyOwner: null,
-  longestRoadOwner: null,
+  
+  largestArmyOwner: null
+  longestRoadOwner: null
 }

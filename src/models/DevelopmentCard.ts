@@ -7,5 +7,5 @@ export type DevelopmentCardType =
 
 export interface DevelopmentCard {
   type: DevelopmentCardType
-  isNew: boolean
+  isNew: boolean // TODO: Do I need this?
 }
