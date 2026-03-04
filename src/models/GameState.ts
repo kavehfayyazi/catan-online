@@ -24,6 +24,6 @@ export interface GameState {
   playersToDiscard?: string[]
   robberMovePending?: boolean
   
-  largestArmyOwner: null
-  longestRoadOwner: null
+  largestArmyOwner: string | null
+  longestRoadOwner: string | null
 }
